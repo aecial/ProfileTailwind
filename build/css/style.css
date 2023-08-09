@@ -534,15 +534,47 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.h-40 {
-  height: 10rem;
+.flex {
+  display: flex;
 }
 
-.w-40 {
-  width: 10rem;
+.h-28 {
+  height: 7rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-96 {
+  gap: 24rem;
 }
 
 .bg-emerald-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(16 185 129 / var(--tw-bg-opacity));
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+@font-face {
+  font-family:;
+
+  src: url();
 }
