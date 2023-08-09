@@ -3,8 +3,4 @@
 @tailwind utilities;
 
 @layer utilities {
-  @font-face {
-    font-family:;
-    src: url();
-  }
 }
