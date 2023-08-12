@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="box-border">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,17 +10,39 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <nav class="bg-emerald-500 w-full h-28 flex items-center">
-      <div class="flex justify-between items-center gap-96">
-        <div><a href="index.html" class="text-5xl">Instagram</a></div>
-        <form action="" method="get">
-          <input type="text" name="search" id="search" />
-        </form>
-        <div>
-          <a href="#" class="text-4xl"><i class="fa-solid fa-house"></i></a>
-          <a href="#" class="text-4xl"><i class="fa-solid fa-paper-plane"></i></i></a>
-          <a href="#" class="text-4xl"><i class="fa-solid fa-heart"></i></a>
+  <body class>
+    <nav
+      class="container bg-emerald-700 max-w-7xl h-32 mx-auto flex items-center justify-evenly font-bold text-5xl text-slate-50 px-4 hidden md:flex"
+    >
+      <a href="index.html" class="borel"
+        ><i class="fa-brands fa-instagram"></i> | Instagram</a
+      >
+      <form action="" method="GET">
+        <input
+          type="text"
+          name="search"
+          id="search"
+          class="rounded-2xl text-black p-4 w-48 h-11"
+        />
+      </form>
+      <div>
+        <a href="#" class="borel"><i class="fa-sharp fa-solid fa-house"></i></a>
+        <a href="#" class="borel"><i class="fa-solid fa-paper-plane"></i></a>
+        <a href="#" class="borel"><i class="fa-solid fa-heart"></i></a>
+      </div>
+    </nav>
+    <nav id="mobile-nav" class="bg-teal-300 w-full h-16 flex items-center px-2">
+      <div class="flex justify-between w-full">
+        <a href="http://" class="text-xl"
+          ><i class="fa-solid fa-lock"></i>@username
+        </a>
+        <div class="flex gap-4">
+          <a href="http://" class="text-3xl"
+            ><i class="fa-solid fa-folder-plus"></i
+          ></a>
+          <a href="http://" class="text-3xl"
+            ><i class="fa-solid fa-bars"></i
+          ></a>
         </div>
       </div>
     </nav>

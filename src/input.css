@@ -3,4 +3,18 @@
 @tailwind utilities;
 
 @layer utilities {
+  @font-face {
+    font-family: lazy;
+    src: url(/build/assets/fonts/lazy_dog.ttf);
+  }
+  @font-face {
+    font-family: borel;
+    src: url(/build/assets/fonts/Borel-Regular.ttf);
+  }
+  .lazy {
+    font-family: lazy;
+  }
+  .borel {
+    font-family: borel;
+  }
 }
