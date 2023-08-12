@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class>
+  <body class="dark:bg-black dark:text-white">
     <nav
       class="container bg-emerald-700 max-w-7xl h-32 mx-auto flex items-center justify-evenly font-bold text-5xl text-slate-50 px-4 hidden md:flex"
     >
@@ -31,10 +31,10 @@
         <a href="#" class="borel"><i class="fa-solid fa-heart"></i></a>
       </div>
     </nav>
-    <nav id="mobile-nav" class="bg-teal-300 w-full h-16 flex items-center px-2">
+    <nav id="mobile-nav" class="w-full h-16 flex items-center px-2 md:hidden">
       <div class="flex justify-between w-full">
         <a href="http://" class="text-xl"
-          ><i class="fa-solid fa-lock"></i>@username
+          ><i class="fa-solid fa-lock"></i> @username
         </a>
         <div class="flex gap-4">
           <a href="http://" class="text-3xl"
@@ -46,5 +46,79 @@
         </div>
       </div>
     </nav>
+    <main class="flex justify-between items-center mt-4 px-4">
+      <div>
+        <div
+          class="w-20 h-20 rounded-full object-contain border-solid border-2 overflow-hidden ml-2"
+        >
+          <img src="/build/assets/img/Teddy.jpg" alt="ProfilePicture" />
+        </div>
+        <h2>Teddy Pascual</h2>
+      </div>
+      <div>
+        <ul class="flex gap-8 text-sm">
+          <li class="flex flex-col items-center">###<a href="">Posts</a></li>
+          <li class="flex flex-col items-center">
+            ####<a href="">Followers</a>
+          </li>
+          <li class="flex flex-col items-center">
+            ####<a href="">Following</a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <div class="w-full h-5 flex items-center justify-evenly mt-4 px-4">
+      <button class="bg-gray-600 p-1 rounded-xl text-lg w-[40%]">
+        Edit Profile
+      </button>
+      <button class="bg-gray-600 p-1 rounded-xl text-lg w-[40%]">
+        Share Profile
+      </button>
+      <button class="bg-gray-600 p-1 rounded-xl text-lg w-[10%]">
+        <i class="fa-solid fa-user-plus"></i>
+      </button>
+    </div>
+    <div class="mt-4 px-4">
+      <h4>Story Highlights</h4>
+      <h5>Keep your favorite stories on your profile</h5>
+    </div>
+    <div class="mt-4 text-5xl px-4 flex gap-5">
+      <p class="flex flex-col items-center">
+        <i class="fa-solid fa-circle-plus"></i><span class="text-sm">New</span>
+      </p>
+      <p>
+        <i
+          class="fa-regular fa-circle bg-gray-600 rounded-s-3xl rounded-t-3xl rounded-b-3xl text-gray-600"
+        ></i>
+      </p>
+      <p>
+        <i
+          class="fa-regular fa-circle bg-gray-600 rounded-s-3xl rounded-t-3xl rounded-b-3xl text-gray-600"
+        ></i>
+      </p>
+      <p>
+        <i
+          class="fa-regular fa-circle bg-gray-600 rounded-s-3xl rounded-t-3xl rounded-b-3xl text-gray-600"
+        ></i>
+      </p>
+    </div>
+    <div class="flex justify-around items-center text-4xl mt-4">
+      <a id="myPics" onclick="myTaggedPics()"
+        ><i class="fa-solid fa-table-cells"></i
+      ></a>
+      <a id="myTaggedPics" onclick="myPics()"
+        ><i class="fa-regular fa-id-badge"></i
+      ></a>
+    </div>
+    <div class="mt-4">
+      <div id="line" class="active mb-0.5"></div>
+      <div id="pics absolute">
+        <div class="bg-teal-500 w-full h-screen"></div>
+      </div>
+      <div id="taggedPics absolute">
+        <div class="bg-red-500 w-full h-screen">ror</div>
+      </div>
+    </div>
+    <script src="/build/js/index.js"></script>
   </body>
 </html>

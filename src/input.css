@@ -17,4 +17,8 @@
   .borel {
     font-family: borel;
   }
+  .active {
+    border-top: 2px solid white;
+    width: 50%;
+  }
 }
