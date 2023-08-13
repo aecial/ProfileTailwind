@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
-    <link rel="stylesheet" href="/build/css/style.css" />
+    <link rel="stylesheet" href="./build/css/style.css" />
     <script
       src="https://kit.fontawesome.com/fae056ab45.js"
       crossorigin="anonymous"
@@ -103,19 +103,19 @@
       </p>
     </div>
     <div class="flex justify-around items-center text-4xl mt-4">
-      <a id="myPics" onclick="myTaggedPics()"
-        ><i class="fa-solid fa-table-cells"></i
-      ></a>
-      <a id="myTaggedPics" onclick="myPics()"
-        ><i class="fa-regular fa-id-badge"></i
-      ></a>
+      <button id="myPics" onclick="myPics()">
+        <i class="fa-solid fa-table-cells"></i>
+      </button>
+      <button id="myTaggedPics" onclick="myTaggedPics()">
+        <i class="fa-regular fa-id-badge"></i>
+      </button>
     </div>
     <div class="mt-4">
-      <div id="line" class="active mb-0.5"></div>
-      <div id="pics absolute">
+      <div id="line" class="active"></div>
+      <div id="pics">
         <div class="bg-teal-500 w-full h-screen"></div>
       </div>
-      <div id="taggedPics absolute">
+      <div id="taggedPics">
         <div class="bg-red-500 w-full h-screen">ror</div>
       </div>
     </div>
